@@ -1,8 +1,8 @@
 package com.blog.melnykblog.service;
 
-import com.blog.melnykblog.dto.NewBlogDto;
+import com.blog.melnykblog.dto.NewPostDto;
 
 public interface BlogService {
 
-    void saveNewBlog(NewBlogDto blog);
+    void saveNewBlog(NewPostDto blog);
 }

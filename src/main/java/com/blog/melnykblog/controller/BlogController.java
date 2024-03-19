@@ -1,6 +1,6 @@
 package com.blog.melnykblog.controller;
 
-import com.blog.melnykblog.dto.NewBlogDto;
+import com.blog.melnykblog.dto.NewPostDto;
 import com.blog.melnykblog.service.BlogService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -20,8 +20,8 @@ public class BlogController {
     }
 
     @PostMapping("/new")
-    public String createNewPost(@RequestBody NewBlogDto newBlogDto) {
-        blogService.saveNewBlog(newBlogDto);
+    public String createNewPost(@RequestBody NewPostDto newPostDto) {
+        blogService.saveNewBlog(newPostDto);
         return "Blog added successfully.";
     }
 }

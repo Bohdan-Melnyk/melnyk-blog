@@ -1,9 +1,18 @@
 package com.blog.melnykblog.dto;
 
-public class NewBlogDto {
+public class NewPostDto {
     private Long authorId;
     private String title;
     private String content;
+    private String userEmail;
+
+    public String getUserEmail() {
+        return userEmail;
+    }
+
+    public void setUserEmail(String userEmail) {
+        this.userEmail = userEmail;
+    }
 
     public Long getAuthorId() {
         return authorId;
