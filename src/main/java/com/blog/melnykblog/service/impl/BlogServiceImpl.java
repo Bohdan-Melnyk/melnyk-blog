@@ -1,6 +1,6 @@
 package com.blog.melnykblog.service.impl;
 
-import com.blog.melnykblog.dto.NewBlogDto;
+import com.blog.melnykblog.dto.NewPostDto;
 import com.blog.melnykblog.entity.Blog;
 import com.blog.melnykblog.repo.BlogRepo;
 import com.blog.melnykblog.service.BlogService;
@@ -20,7 +20,7 @@ public class BlogServiceImpl implements BlogService {
 
 
     @Override
-    public void saveNewBlog(NewBlogDto dto) {
+    public void saveNewBlog(NewPostDto dto) {
         var blog = new Blog();
         blog.setTitle(dto.getTitle());
         blog.setContent(dto.getContent());
